@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: https://www.spade-co.jp/wp-sitemap.xml
+
+Disallow: /wp-content/uploads/wpo-plugins-tables-list.json
