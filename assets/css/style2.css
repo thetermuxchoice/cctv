@@ -1,0 +1,68 @@
+.myswap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 14px;
+
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+ } 
+  
+
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 520px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.myswap .picture {
+  width: 520px;
+  height: 420px;
+  overflow: hidden;
+  
+ 
+}
+.myswap .picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.myswap .detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+
+ 
+}
+.myswap .detail h3 {
+    color: #000;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+.myswap span {
+    display: block;
+	font-family: "Poppins", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	font-weight: normal;
+	color: gray;
+    
+ text-align: center;
+  }

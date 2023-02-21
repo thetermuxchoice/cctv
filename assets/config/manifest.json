@@ -1,7 +1,7 @@
 {
 	"start_url": "/",
-	"short_name": "SPADE&Co.",
-    "name": "SPADE&Co. Inc.",
+	"short_name": "CCTV",
+    "name": "CCTV",
     "icons": [
 		{
             "src": "/assets/config/android-chrome-192x192.png",
