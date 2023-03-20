@@ -52,6 +52,83 @@
     overflow:hidden;
     -ms-overflow-style: none;
 }
+
+ .img1 {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;;
+  object-position: bottom;
+  margin-right:3%;
+}
+
+.img2 {
+        width: 100%;
+        height: 450px;
+        background-image: url("../assets/sec1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 450px;
+       }
+      
+      .margin-1{
+      position:relative;
+      }
+      @media screen and (max-width: 1024px){
+      .margin-1{
+      position:relative;
+      margin-left:5%;
+      left:5%;
+      }
+      .wa--one{
+      width:600px;
+      
+      }
+      
+      .img1 {
+       width: 85%;
+       height: 300px;
+       object-fit: cover;
+       }
+      
+      }
+      
+      @media screen and (max-width: 768px){
+       .margin-1{
+      position:relative;
+      margin-left:1%;
+      left:0;
+      }
+      
+       .img1 {
+       
+       width: 100%;
+       height: 300px;
+       margin-right:1%;
+       object-fit: cover;
+       }
+       
+       .img2 {
+        width: 100%;
+        height: 250px;
+        }
+        }
+        
+        @media screen and (max-width: 480px){
+        .img1 {
+         width: 100%;
+       height: 200px;
+       margin-right:1%;
+       object-fit: contain;
+         }
+         
+         .img2 {
+        width: 100%;
+        height: 150px;
+        }
+          }
+
+
+
 iframe::-webkit-scrollbar {
     display: none !important;
 }
@@ -154,7 +231,7 @@ iframe::-webkit-scrollbar {
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Services</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="/about" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#About" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">About</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">About</span>
@@ -225,14 +302,15 @@ iframe::-webkit-scrollbar {
         </header>
 
 
+
       <section class="tp--ab">
         <div class="tp--ab__cp js-pos js-tdg" data-de=".08" data-de-offset=".5">
           <header class="tp--ab__hd">
-            <h2 class="tp--ab__ttl f--en a--op js-tdi">About</h2>
+            <h2 class="tp--ab__ttl f--en a--op js-tdi"></h2>
           </header>
-          <div class="tp--ab__stg"><img class="tp--ab__stg__img _s -aboutimg mobile" src="/assets/img/index/about-sp.png" alt="VFX Company based in japan"><img class="tp--ab__stg__img _p -aboutimg desktop" src="/assets/img/index/about.png" alt="CCTV">
-            <p class="c--htx">The picture industry of Japan</p>
-            <p class="c--htx">The picture industry of Japan I lead it to the industry to be able to boast of to the world</p>
+          <div class="tp--ab__stg"><img class="tp--ab__stg__img _s -aboutimg mobile" src="assets\img\index\about3.png" alt="CCTV"><img class="tp--ab__stg__img _p -aboutimg desktop" src="assets\img\index\about.png" alt="CCTV">
+            <p class="c--htx"></p>
+            <p class="c--htx"></p>
           </div>
         </div>
         <div class="tp--ab__rl">
@@ -245,49 +323,90 @@ iframe::-webkit-scrollbar {
 
 
 
-        <section class="tp--ob">
-          <div class="tp--ob__bd">
-            <header class="tp--ob__hd js-pos js-tdr" data-de=".03">
-              <h3 class="tp--ob__ttl f--head js-tex" data-class="a--op js-tdi">Ofek systems</h3>
-            </header>
-            <div class="tp--ob__rd js-pos js-tdg" data-de=".08" data-de-offset=".08" style="width: 97%;">
-              <p class="tp--ob__rd__p _e a--op js-tdi">Install and sell security systems to private customers, businesses, factories and institutions.
-              Security cameras, alarm systems, announcement and sound systems, communication, access controls and encoders and a variety of low voltage systems.</p>
-              <p class="tp--ob__rd__p _j a--op js-tdi">Our company adheres to the highest standards in the field of security cameras and works with all the leading companies in the field. Because there is no compromise on quality and safety.</p>
-            </div>
+         <div class="tp--ob__bd" id="About">
+    <div class="ab--kv" >
 
-            <div class="tp--ob__btn a--op js-pos">
-              <div class="m--btn" style="margin-bottom: 90px;">
+        <header class="m--phd" style="padding: 10.875rem 4.16667% 0;">
+          <div class="m--phd__in js-pos js-tdr" data-de=".03">
+            <h1 class="m--phd__ttl f--head js-tex" data-class="a--op js-tdi">About</h1>
+          </div>
+        </header>
 
-                <a class="m--btn__tgt js-hv" href="#" aria-label="About Detail" data-hv="btn">
-                  <span class="m--btn__hit">
-                    <span class="m--btn__bd">
-                      <span class="m--btn__lab">
-                        <span class="m--btn__lab__f f--head -tl js-tex" data-class="-t">About Detail</span>
-                        <span class="m--btn__lab__b f--head -tl js-tex" data-class="-t">About Detail</span>
-                      </span>
-                      <span class="m--btn__ico c--fic">
-                        <span class="m--btn__ico__b c--fic">
-                          <svg class="c--sg" viewBox="0 0 18 18">
-                            <polygon class="_bg" points="9,0 8.4,0.7 16.1,8.4 0,8.4 0,9.4 16.2,9.4 8.4,17.3 9,18 18,9"></polygon>
-                          </svg>
-                        </span>
-                        <span class="m--btn__ico__f c--fic -i">
-                          <span class="m--btn__ico__fi -i">
-                            <svg class="c--sg" viewBox="0 0 18 18">
-                              <path class="_st" d="M0,9h18" clip-path="url(#__btnArrow)"></path>
-                            </svg>
-                          </span>
-                        </span>
-                      </span>
-                    </span>
-                  </span>
+        <section class="ab--cp">
+          <div class="ab--cp__in">
+            <div class="ab--cp__bd">
+           
+              <header class="c--htx">
+                <h2 class="c--htx">About</h2>
+              </header>
+
+            
+              <div class="cr--jo__nv">
+                <ul class="cr--jo__nu">
+                  <li class="cr--jo__nl">
+                   <hr style="height:100%;position:absolute;width:.1vw;border-width:0;color:#000;background-color:grey;left:5%">
+                  </li>
+              
+                </ul>
+              </div>
+              <div class="margin-1">
+               <a class="m--btn__tgt js-hv"  aria-label="About Detail" data-hv="btn">
+                <p class="m--mc__ne f--head" style="text-transform: none !important;">We have experience</p> 
                 </a>
 
-              </div>
-            </div>
+              <div class="ab--cp__rd">
+              
+                <p class="ab--cp__p a--op js-pos"> In Gallery Security we are specialists in Integral Security Solutions, offering to the market:
+                  <br>our Consulting and Advisory Services,
+                  <br>with the support of Expert Personnel,
+                  <br>as well as a wide variety of electronic security equipment of the latest generation,
+                  <br>which give efficient response to the demands of protection to property and people,
+                  <br>inside and outside the country.
+                 </p>
+                 <br>
+                 
+                  <!-- <div class="wa--one"> -->
+                <!-- <button class="wa--one__tgt c--fic h--sww js-wd-hit" type="button" aria-label="「湯道」" style="" > -->
+                  <!-- <div class="wa--one__img h--sww__i"> -->
+                  <div data-tilt="" data-tilt-glare="false" data-tilt-scale="1.1" id="p1">
+                  <div class="img2"></div>
+                  <!-- <img src="/wp-content/uploads/2022/10/sec1.jpg" alt="" class="img1" id="img1"> -->
+                  </div>
+                    <!-- <div class="c--bg js-bg" data-src="{&quot;sp&quot;:&quot;/wp-content/uploads/2022/10/1.jpg&quot;,&quot;pc&quot;:&quot;/wp-content/uploads/2022/10/1.jpg&quot;,&quot;retina&quot;:&quot;/wp-content/uploads/2022/10/1.jpg&quot;,&quot;mq&quot;:&quot;1025&quot;}"></div> -->
+                  <!-- </div> -->
+                <!-- </button> -->
+              <!-- </div> -->
+               <br>
+               <div class="cr--cm__lab js-rpt js-pos a--op js-scspd-t" style="position:relative !important">
+          <div class="cr--cm__lab__ln js-rpt-ln" style="opacity:1 !important">
+            <div class="cr--cm__lab__i f--head js-rpt-one" style="color:#D70538 !important;opacity:1 !important">20 years </div><div class="cr--cm__lab__i f--head js-rpt-one" style="color:#fff !important;opacity:1 !important"> behind us</div> </p>
           </div>
+        </div>
+              
+                   <div class="ab--cp__p a--op js-pos">
+                  <br>For more than 20 years,
+                  <br>Gallery Security has been serving Corporate,
+                  <br>Industrial, Business, Residential and Personal Clients,
+                  <br>maintaining exclusive alliances with the support of recognized international brands experts in the security area,
+                  <br>manufacturers of hardware and high-tech software,
+                  <br>which support and complement our broad portfolio of products.
+                </p>
+              </div>
+                
+            </div>
+            </div>
+             <br>
+              <br>
+          </div>
+
+             </div>
+          
+          
         </section>
+
+        </div>
+
+      </div>
 
         <br>
         <br>
@@ -1039,6 +1158,9 @@ iframe::-webkit-scrollbar {
   <div class="b--aw">
     <canvas class="b--awc" id="-aw"></canvas>
   </div>
+<script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 
   <!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYe_l9viV0LlwhjyLeS-jRCn95fGYW4lI" defer></script-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script><script src="/assets/js/script.js" defer></script>
