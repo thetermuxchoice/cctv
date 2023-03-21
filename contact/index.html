@@ -16,7 +16,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
-
+<link rel="canonical" href="http://127.0.0.1/contact/" />
     <link rel="preconnect" href="https://maps.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,19 +106,19 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
       <div class="b--gn">
         <ul class="b--gn__ul b--gn__list" role="navigation" aria-label="Minimam Site navigation">
             <li class="b--gn__one" style="display: flex;">
-              <a class="b--gn__btn js-hv" href="../" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion3(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">Home</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Home</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="/services" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">Services</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Services</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="/about" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion2(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">About</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">About</span>
@@ -284,7 +284,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     <footer>
       <div class="row primary">
         <div class="column about">
-          <a href="../" aria-label="Back to Home page">
+          <a href="#" onclick="miFuncion3(); return false;" aria-label="Back to Home page">
             <img src="../assets/config/logo.png" style="width: 100%;">
           </a>
           <br>
@@ -299,16 +299,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
           <div style="margin-top: 20px;">
             <ul>
               <li>
-                <a href="../">Home</a>
+                <a href="#" onclick="miFuncion3(); return false;">Home</a>
               </li>
               <li>
                 <a href="/work">Products</a>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <a href="#" onclick="miFuncion(); return false;">Services</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="#" onclick="miFuncion2(); return false;">About</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>
@@ -386,7 +386,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="/services" aria-label="Our crew">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion(); return false;" aria-label="Our crew">
                     <span class="b--nv__one__lab f--head">
                       <span class="b--nv__one__lab__f h--tx__i">Services</span>
                       <span class="b--nv__one__lab__b h--tx__i">Services</span>
@@ -401,7 +401,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="/about" aria-label="About">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion2(); return false;" aria-label="About">
                     <span class="b--nv__one__lab f--head">
                       <span class="b--nv__one__lab__f h--tx__i">About</span>
                       <span class="b--nv__one__lab__b h--tx__i">About</span>
@@ -431,7 +431,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="../" aria-label="Home">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion3(); return false;" aria-label="Home">
                     <span class="b--nv__one__lab f--head">
                       <span class="b--nv__one__lab__f h--tx__i">Home</span>
                       <span class="b--nv__one__lab__b h--tx__i">Home</span>
@@ -451,7 +451,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
             <div class="b--nv__ft__bd">
               <div class="b--nv__ft__mt">
                 <div class="b--nv__ft__lg js-nv-op">
-                  <a class="b--nv__ft__lg__a h--op" href="../" aria-label="to Home">
+                  <a class="b--nv__ft__lg__a h--op" href="#" onclick="miFuncion3(); return false;" aria-label="to Home">
                     <img src="../assets/config/logo.png" style="width: 200%;">
                   </a>
                 </div>
@@ -483,5 +483,45 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	<script src="/assets/js/lib.js" defer></script>
 	<script src="/assets/js/vndr.js" defer></script>
 	<script src="/assets/js/app.js" defer></script>
+    
+     <script >
+
+let ejecutado = false; // indicador booleano
+
+
+
+
+function miFuncion(link) {
+
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/services/index.html", "self");
+    newTab.location.reload();
+  
+}
+
+function miFuncion2(link) {
+  
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/about/index.html", "self");
+    newTab.location.reload();
+  
+}
+
+
+function miFuncion3(link) {
+
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/", "self");
+    newTab.location.reload();
+  
+}
+
+  </script>
 </body>
 </html>
