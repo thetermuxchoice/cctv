@@ -12,10 +12,9 @@ body {
   padding: 0;
  } 
   
-.no-pc .scrollbar-track {
-    display: none !important
-}
-
+/* .no-pc .scrollbar-track { */
+    /* display: none !important */
+/* } */
 
 .swiper-container {
   width: 100%;
