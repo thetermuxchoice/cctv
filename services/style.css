@@ -232,6 +232,7 @@ main > div > a:hover {
   padding: 0;
   list-style: none;
   position: relative;
+  align-items:center;
 }
 
 .team-info .team-info-item {
