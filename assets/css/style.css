@@ -6591,13 +6591,13 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 .hamburger{
     display:block;
 	position:absolute;
-    z-index:450;
+    z-index:400;
   background-color:transparent;
       opacity:1;
 	right:0;
 	top:0;
-	height:30px;
-	width:30px;
+	height:35px;
+	width:35px;
 	padding:20px 20px;
 	-webkit-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0);
@@ -6608,7 +6608,8 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 	-webkit-user-select:none;
 	-moz-user-select:none;
 	-ms-user-select:none;
-	user-select:none
+	user-select:none;
+    margin:1em;
 }
 
 .hamburger.is-active{
