@@ -1372,8 +1372,8 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     width: 3.875rem;
     height: 3.6875rem;
     position: fixed;
-    top: 27px;
-    left: 48px;
+    top: 0px;
+    left: 0px;
     z-index: 960
 }
 .b--hm__in {
@@ -6615,7 +6615,7 @@ opacity:0;
         padding-right:3px;
     }
 }
-@media only screen and (max-width:1023px){
+@media only screen and (min-width:1023px){
 .b--hm__in {
     width: 5.625rem;
     height: 4.625rem;
@@ -6626,7 +6626,7 @@ opacity:0;
     width: 3.125rem;
     height: 3.6875rem;
     position: fixed;
-    top: 27px;
+    top: 0px;
     left: 0px;
     z-index: 965;
 }
