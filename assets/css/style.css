@@ -6588,72 +6588,10 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     }
 }
 
-@media only screen and (max-width:640px){
-   .tp--ow__ttl{
-      font-size: 4.25rem;  
-    }
-    .main-slide{
-        padding-left:3px;
-        padding-right:3px;
-    }
-    
-    .b--hm__in {
-    width: 5.625rem;
-    height: 4.625rem;
-}
-
-.tp--hd__bd img{
-opacity:0;
-}
-
-@media only screen and (max-width:320px){
-    .tp--ow__ttl{
-      font-size: 3.25rem;  
-    }
-    .main-slide{
-        padding-left:3px;
-        padding-right:3px;
-    }
-}
-@media only screen and (min-width:1023px){
-.b--hm__in {
-    width: 5.625rem;
-    height: 4.625rem;
-}
-
-.b--hm {
-    display: block;
-    width: 3.125rem;
-    height: 3.6875rem;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 965;
-}
-
-.m--phd {
-    width: 100%;
-    /* padding: 12.5rem 5.33333% 0.1875rem; */
-    position: relative;
-    z-index: 5;
-}
-
-
-}
-@media only screen and (min-width:1024px){
 .hamburger{
-    opacity:0;
-}
-}
-
-@media screen and (max-width:1023px){
-.hamburger{
-    opacity:1;
-}
-}
-
-.hamburger{
-	position:fixed;
+    display:block;
+	position:absolute;
+    z-index:450;
   background-color:transparent;
       opacity:1;
 	right:0;
@@ -6712,6 +6650,70 @@ opacity:0;
 	transform:translateY(-200%) rotate(135deg) !important;
 }
 
-.menuppal.is_active{
-  transform: translate3d(0px, 0px, 0px);
+
+
+
+@media only screen and (max-width:640px){
+   .tp--ow__ttl{
+      font-size: 4.25rem;  
+    }
+    .main-slide{
+        padding-left:3px;
+        padding-right:3px;
+    }
+    
+    .b--hm__in {
+    width: 5.625rem;
+    height: 4.625rem;
 }
+
+.tp--hd__bd img{
+opacity:0;
+}
+}
+@media only screen and (max-width:320px){
+    .tp--ow__ttl{
+      font-size: 3.25rem;  
+    }
+    .main-slide{
+        padding-left:3px;
+        padding-right:3px;
+    }
+}
+@media only screen and (min-width:1023px){
+.b--hm__in {
+    width: 5.625rem;
+    height: 4.625rem;
+}
+
+.b--hm {
+    display: block;
+    width: 3.125rem;
+    height: 3.6875rem;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 965;
+}
+
+.m--phd {
+    width: 100%;
+    /* padding: 12.5rem 5.33333% 0.1875rem; */
+    position: relative;
+    z-index: 5;
+}
+
+
+}
+@media only screen and (min-width:1024px){
+.hamburger{
+    opacity:0;
+}
+}
+
+@media only screen and (max-width:1023px){
+.hamburger{
+    opacity:1;
+}
+}
+
