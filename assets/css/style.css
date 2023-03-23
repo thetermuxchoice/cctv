@@ -2196,8 +2196,8 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
    .tp--ab__vds:before {
     content: '';
     display: block;
-    width: 60%;
-    padding: 100% 0 0
+    width: 100%;
+    padding: 60% 0 0
 } 
 }
 
@@ -6629,6 +6629,13 @@ opacity:0;
     top: 27px;
     left: 48px;
     z-index: 900;
+}
+
+.m--phd {
+    width: 100%;
+    /* padding: 12.5rem 5.33333% 0.1875rem; */
+    position: relative;
+    z-index: 5;
 }
 
 
