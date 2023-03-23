@@ -6627,8 +6627,8 @@ opacity:0;
     height: 3.6875rem;
     position: fixed;
     top: 27px;
-    left: 48px;
-    z-index: 900;
+    left: 0px;
+    z-index: 965;
 }
 
 .m--phd {
