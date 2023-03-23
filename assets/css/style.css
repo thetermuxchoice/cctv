@@ -6657,6 +6657,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 @media only screen and (max-width:640px){
    .tp--ow__ttl{
       font-size: 4.25rem;  
+      text-align:center;
     }
     .main-slide{
         padding-left:3px;
@@ -6675,6 +6676,7 @@ opacity:0;
 @media only screen and (max-width:320px){
     .tp--ow__ttl{
       font-size: 3.25rem;  
+      text-align:center;
     }
     .main-slide{
         padding-left:3px;
