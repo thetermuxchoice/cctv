@@ -1662,7 +1662,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    z-index: 750;
+    z-index: 950;
     background-color: #000
 }
 .is-navopen .b--nv {
