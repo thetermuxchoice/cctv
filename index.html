@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'>
 
   <style>
     html{background-color:#000;}
@@ -127,11 +127,59 @@
         }
           }
 
+.main-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+ } 
 
 
-iframe::-webkit-scrollbar {
-    display: none !important;
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 520px;
+  width:100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.picture {
+  width: 100%;
+  max-height: 420px;
+  height:auto;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.detail {
+  padding: 25px 20px;
+  
+  text-align: center;
+ 
+} 
+
+
+.swiper-container span {
+	color: gray;
+  }
+
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Noto+Sans+JP:wght@500&amp;family=Noto+Serif+JP:wght@500&amp;family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
   
@@ -140,7 +188,7 @@ iframe::-webkit-scrollbar {
 <link href="/assets/css/footer.css" rel="stylesheet">
 <link href="/assets/css/all.css" rel="stylesheet">
 <link href="/assets/css/style.css" rel="stylesheet">
-<link href="/assets/css/style2.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -408,19 +456,87 @@ iframe::-webkit-scrollbar {
 
       </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-
-
         <section class="tp--ob ">
           <div class="tp--ob__bd">
             <header class="tp--ob__hd js-pos js-tdr" data-de=".03">
               <h3 class="tp--ob__ttl f--head js-tex" data-class="a--op js-tdi">Our Services</h3>
             </header>
-            <div class="tp--ob__rd js-pos js-tdg myswap" data-de=".08" data-de-offset=".08">
-             <iframe src="slider_section/" style="width: 100%; height: 990px;" style="position:relative;"></iframe> 
+            <div class="main-slide" >
+            <div class="swiper-container" id="myswap">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_1.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black">Surveillance cameras</h3>
+        <span>Ofek systems offers world-class security camera systems installed by professional security camera system installers. We have years of experience in planning, customizing and installing comprehensive CCTV systems. We offer video surveillance systems, indoor and outdoor camera systems and cutting-edge video analytics. We specialize in the design and installation of security camera systems for homes, businesses, companies and institutions.
+		</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_2.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Alarm systems</h3>
+        <span>Your home / business contains people and assets that you want to protect. Installing an alarm system helps you keep out burglars, reduce employee theft, stop unauthorized access, cut insurance costs and prevent theft. Our professional alarm system installers have years of experience in designing, customizing and installing burglar alarms. As a leading commercial alarm company, Safe and Sound Security designs and installs alarm systems for homes, stores, cannabis businesses, industrial facilities, warehouses, apartment complexes, general contractors, commercial buildings, retail establishments and technology companies.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_3.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Network installation</h3>
+        <span>ofek systems provides speedy and reliable connection for maximum business security. We ensure your commercial security system is strong, connected, and communicative with top-notch cabling services. Whether your property is an office building, industrial facility, apartment complex, or any other commercial area, we have the tools to handle your project.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_4.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Access control installers</h3>
+        <span>Ofek Systems provides effective and simple-to-use door access control systems. We offer over a decade of experience in the design, customization and installation of wired and wireless key card access systems. As access control installers, we understand the importance of controlling who enters and exits your building. We specialize in designing door access control systems for cannabis operations, offices, stores, homes, industrial facilities, warehouses, apartment complexes, general contractors, commercial buildings, retail establishments and technology companies.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_5.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Audio / Video installations</h3>
+        <span>We are industry-leading specialists in the design, supply, and installation of professional audio and video systems for commercial premises, restaurants, bars, places of worship, schools, and home use. We have a large range of pre-configured off-the-shelf installation packages to suit most requirements, along with our ever-expanding catalog, which covers everything from modern 'smart home' equipment to high-powered PA systems for events and large venues. Our team is always on hand to guide you in creating an audio system to suit your specific needs, whether you require a discreet home system or a large multi-zone commercial system, we will work with you to create a bespoke package.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_6.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Finance And Legal Working Streams Occur Throughout</h3>
+        <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+											</span>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+   <div class="swiper-pagination"></div> 
+
+  <!-- If we need navigation buttons -->
+  <!--     <div class="swiper-button-prev"></div> -->
+  <!--     <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
               
               
             </div>
@@ -436,7 +552,7 @@ iframe::-webkit-scrollbar {
       <section class="tp--ow">
         <div class="tp--ow__bd js-pos">
           <header class="tp--ow__hd js-tdr" data-de=".03">
-            <h2 class="tp--ow__ttl f--head js-tex" data-class="a--op js-tdi">Our <br>Products</h2>
+            <h2 class="tp--ow__ttl f--head js-tex titulo-p" data-class="a--op js-tdi">Our <br>Products</h2>
           </header>
           <div class="tp--ow__rd js-tdg" data-de=".08" data-de-offset=".08">
             <p class="tp--ow__rd__p a--op js-tdi"></p>
@@ -1193,6 +1309,32 @@ function miFuncion2(link) {
     newTab.location.reload();
   
 }
+
+
+
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  loop:true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 350,
+    modifier: 1,
+    slideShadows: true
+  },
+  autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+  pagination: {
+    el: ".swiper-pagination"
+  }
+});
+
+
 
   </script>
   <!--script src="/assets/js/jquery-3.5.1.min.js" defer></script>
