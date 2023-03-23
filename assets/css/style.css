@@ -1374,11 +1374,11 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     position: fixed;
     top: 27px;
     left: 48px;
-    z-index: 900
+    z-index: 960
 }
 .b--hm__in {
     display: block;
-    width: 1.25rem;
+    width: 6.25rem;
     height: 1.25rem;
     position: absolute;
     top: 0;
@@ -1662,7 +1662,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    z-index: 950;
+    z-index: 940;
     background-color: #000
 }
 .is-navopen .b--nv {
