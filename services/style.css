@@ -278,7 +278,7 @@ main > div > a:hover {
   text-align:center;
 }
 .content {
-      font-size: 14px;
+      font-size: 15px;
     font-weight: 300;
     line-height: 1.5;
     color: #fff;
@@ -286,42 +286,42 @@ main > div > a:hover {
     text-align:center;
 }
 
-@media screen and(max-width:320px){
-.single-view-content{
-height:620px !important;
-}
- .content{
-font-size:14px;
-}
-}
+/* @media screen and(max-width:320px){ */
+/* .single-view-content{ */
+/* height:620px !important; */
+/* } */
+ /* .content{ */
+/* font-size:14px; */
+/* } */
+/* } */
 
-@media screen and(max-width:480px){
- .content{
-font-size:14px;
+/* @media screen and(max-width:480px){ */
+ /* .content{ */
+/* font-size:14px; */
 
-}
+/* } */
 
-.single-view-content{
-height:480px !important;
-}
-}
+/* .single-view-content{ */
+/* height:480px !important; */
+/* } */
+/* } */
 
-@media only screen and(max-width:760px){
- .content{
-font-size:16px;
-}
-.single-view-content{
-height:460px !important;
-}
+/* @media only screen and(max-width:760px){ */
+ /* .content{ */
+/* font-size:16px; */
+/* } */
+/* .single-view-content{ */
+/* height:460px !important; */
+/* } */
 
 
-}
+/* } */
 
-@media only screen and(min-width:761px){
-.content {
-    font-size:19px;
-}
-}
+/* @media only screen and(min-width:761px){ */
+/* .content { */
+    /* font-size:19px; */
+/* } */
+/* } */
 
 @media only screen and(max-width:849px){
    .alinear{
