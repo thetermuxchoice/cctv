@@ -2016,6 +2016,13 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     line-height: 1;
     text-transform: uppercase
 }
+
+@media only screen and (max-width:768px){
+    .tp--hd__ttl {
+    font-size: 3.09375rem;
+}
+}
+
 .tp--hd__ft {
     width: 100%;
     height: 13.49325%;
