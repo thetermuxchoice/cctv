@@ -1374,7 +1374,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     position: fixed;
     top: 0px;
     left: 0px;
-    z-index: 800
+    z-index: 900
 }
 .b--hm__in {
     display: block;
@@ -2315,7 +2315,8 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     font-size: 6.25rem;
     line-height: 5.625rem;
     letter-spacing: -.05em;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align:left;
 }
 .tp--ow__rd {
     width: 100%;
@@ -6746,7 +6747,7 @@ text-align:center;
 }
 
 @media only screen and (max-width:990px){
-#js-hm2 img{
-    width: 100%;
+.logo-t{
+    width:150%;
 }
 }
