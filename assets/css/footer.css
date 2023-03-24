@@ -127,7 +127,7 @@ div.social {
   .row.primary {
     grid-template-columns: 1fr;
   }
-  h3{
+ .hola h3{
       text-align:center;
   }
 
