@@ -502,7 +502,7 @@
 	<div class="b--aw">
 	  <canvas class="b--awc" id="-aw"></canvas>
 	</div>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="/assets/js/lib.js" defer></script>
 	<script src="/assets/js/vndr.js" defer></script>
 	<script src="/assets/js/app.js" defer></script>
@@ -544,6 +544,14 @@ function miFuncion3(link) {
     newTab.location.reload();
   
 }
+
+$(document).ready(function() {
+  if ($("#js-nv").css("opacity") == "1") {
+    $(".hamburguer").css("opacity", "1");
+  } else {
+    $(".hamburguer").css("opacity", "0");
+  }
+});
 
   </script>
 </body>

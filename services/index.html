@@ -567,6 +567,7 @@
 	<div class="b--aw">
 	  <canvas class="b--awc" id="-aw"></canvas>
 	</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="./script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
@@ -611,7 +612,13 @@ function miFuncion3(link) {
     newTab.location.reload();
   
 }
-
+$(document).ready(function() {
+  if ($("#navbar").css("opacity") == "1") {
+    $(".hamburguer").css("opacity", "1");
+  } else {
+    $(".hamburguer").css("opacity", "0");
+  }
+});
   </script>
 
 </body>
