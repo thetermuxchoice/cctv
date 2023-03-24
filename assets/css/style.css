@@ -6746,7 +6746,7 @@ text-align:center;
 }
 
 @media only screen and (max-width:990px){
-.logo-t {
-    width:500px;
+#js-hm2 img{
+    width: 100%;
 }
 }
