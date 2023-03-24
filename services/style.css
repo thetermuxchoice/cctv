@@ -330,9 +330,9 @@ main > div > a:hover {
     
 }
 
-@media only screen and(max-width:400px){
+@media only screen and(max-width:640px){
     .single-view-content {
-      height:450px;
+      height:500px;
      
 
     }
