@@ -329,3 +329,11 @@ main > div > a:hover {
 } 
     
 }
+
+@media only screen and(max-width:400px){
+    .single-view-content {
+      height:450px;
+     
+
+    }
+}
