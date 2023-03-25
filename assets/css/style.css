@@ -5399,17 +5399,17 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
     .b--nv {
         background-color: #131313
     }
-    .b--nv__bd {
-        position: relative;
-        display: flex;
-        height: 100%;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-content: stretch;
-        align-items: stretch;
-        padding: 0 0 0 6.625rem
-    }
+    /* .b--nv__bd { */
+        /* position: relative; */
+        /* display: flex; */
+        /* height: 100%; */
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        /* justify-content: space-between; */
+        /* align-content: stretch; */
+        /* align-items: stretch; */
+        /* padding: 0 0 0 6.625rem */
+    /* } */
     .b--nv__hr {
         position: absolute;
         bottom: 0
@@ -5431,11 +5431,11 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
         transform-origin: 0% 100%;
         transform: rotate(90deg)
     }
-    .b--nv__mn {
-        width: 69.26537%;
-        height: 100%;
-        padding: 0
-    }
+    /* .b--nv__mn { */
+        /* width: 69.26537%; */
+        /* height: 100%; */
+        /* padding: 0 */
+    /* } */
     .b--nv__one {
         height: 16.66667vh;
         overflow: hidden
@@ -5461,18 +5461,18 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
         line-height: 12.5vh
     }
     .b--nv__ft {
-        width: 30.73463%;
-        padding: 1.5rem 1.7991% 1.5rem;
+        /* width: 30.73463%; */
+        /* padding: 1.5rem 1.7991% 1.5rem; */
         overflow-x: hidden;
         overflow-y: auto
     }
     .b--nv__ft__in {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-end;
-        align-items: flex-end;
+        /* display: flex; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap; */
+        /* justify-content: flex-start; */
+        /* align-content: flex-end; */
+        /* align-items: flex-end; */
         height: 100%;
         min-height: 38.75rem
     }
