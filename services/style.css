@@ -341,7 +341,7 @@ main > div > a:hover {
 @media only screen and(max-width:479px){
    .single-view-content {
       height:700px !important;
-     
+      .content {font-size:13px !important;}
 
     }
 }
@@ -349,7 +349,7 @@ main > div > a:hover {
 @media only screen and(max-width:768px){
    .single-view-content {
       height:560px !important;
-     
+     .content {font-size:14px !important;}
 
     }
 }
