@@ -202,7 +202,7 @@ main > div > a:hover {
 }
 @media screen and (min-width: 93.75rem) {
   .swiper {
-    width: 150%;
+    width: 100%;
   }
 }
 
@@ -322,6 +322,14 @@ main > div > a:hover {
     /* font-size:19px; */
 /* } */
 /* } */
+@media only screen and(max-width:479px){
+   .single-view-content {
+      height:800px !important;
+     
+
+    }
+}
+
 
 @media only screen and(max-width:849px){
    .alinear{
@@ -331,9 +339,9 @@ main > div > a:hover {
 }
 
 @media only screen and(max-width:479px){
- aside  .single-view-content {
-      height:580px !important;
-     
+   .single-view-content {
+      height:700px !important;
+      .content {font-size:13px !important;}
 
     }
 }
@@ -341,7 +349,7 @@ main > div > a:hover {
 @media only screen and(max-width:768px){
    .single-view-content {
       height:560px !important;
-     
+     .content {font-size:14px !important;}
 
     }
 }
