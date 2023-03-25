@@ -13,7 +13,7 @@
 <style id='global-styles-inline-css' type='text/css'>
 
 </style>
-<link rel="canonical" href="http://127.0.0.1/about/" />
+<link rel="canonical" href="http://127.0.0.1/services/" />
 
  <meta name="description" content="">
 
@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'>
 
  
     <style>
@@ -51,7 +51,22 @@
       .ab--kv {
       padding: 0 0 1rem !important; 
 }
-      
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+@media only screen and (max-width:1024px){ 
+.m--phd{
+       padding: 5.5rem 5.33333% 0.1875rem !important;
+       }
+       
+}
+
+@media only screen and (max-width:480px){ 
+
+}
      </style> 
       
  
@@ -61,7 +76,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Noto+Sans+JP:wght@500&amp;family=Noto+Serif+JP:wght@500&amp;family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
-    <link href="/assets/css/footer.css" rel="stylesheet"><link href="style.css" rel="stylesheet">
+    <link href="/assets/css/footer.css" rel="stylesheet">
           </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="width: 0;height: 0;position: absolute;top: 0;left: 0;pointer-events: none;">
@@ -120,6 +135,17 @@
         <img src="../assets/config/logo.png" style="width: 200%;">
       </a>
     </div-->
+    
+    <div class="hamburger">  
+<button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="js-hm">
+
+	<div class="_layer -top"></div>
+	<div class="_layer -mid"></div>
+	<div class="_layer -bottom"></div>
+
+</button>
+</div>
+
 
     <button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="js-hm">
       <span class="b--hm__in">
@@ -135,19 +161,19 @@
       <div class="b--gn">
         <ul class="b--gn__ul b--gn__list" role="navigation" aria-label="Minimam Site navigation">
             <li class="b--gn__one" style="display: flex;">
-              <a class="b--gn__btn js-hv" href="../" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion3(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">Home</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Home</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="/services" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">Services</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Services</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="/about" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion2(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">About</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">About</span>
@@ -173,7 +199,7 @@
 
         <header class="m--phd">
           <div class="m--phd__in js-pos js-tdr" data-de=".03">
-            <h1 class="m--phd__ttl f--head js-tex" data-class="a--op js-tdi">Services</h1>
+            <h1 class="m--phd__ttl f--head js-tex alinear" data-class="a--op js-tdi">Services</h1>
           </div>
         </header>
 
@@ -236,6 +262,19 @@
           
         </div>
       </div>
+      
+       <div class="swiper-slide swiper-slide--six">
+
+        <div class="mitexto">
+          <h2 class="t1">Finance And Legal Working Streams Occur Throughout</h2>
+          <p class="t2">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              </p>
+          
+        </div>
+      </div>
+      
+      
     </div>
     <!-- Add Pagination -->
      <div class="swiper-scrollbar"></div>
@@ -287,9 +326,16 @@
               </p>
         </article>
       </li>
+      
+      <li class="team-info-item">
+          <h1 class="heading">Finance And Legal Working Streams Occur Throughout</h1>
+         <article class="content">
+            <p>
+              Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+              </p>
+        </article>
+      </li>
     </ul>
-  
-  
   </aside>      
 
         </section>
@@ -313,7 +359,7 @@
     <footer>
       <div class="row primary">
         <div class="column about">
-          <a href="../" aria-label="Back to Home page">
+          <a href="#" onclick="miFuncion3(); return false;" aria-label="Back to Home page">
             <img src="../assets/config/logo.png" style="width: 100%;">
           </a>
           <br>
@@ -324,20 +370,20 @@
           </div>
         </div>
         <div class="column links">
-          <h3>Some Links</h3>
+          <h3 class="alinear">Some Links</h3>
           <div style="margin-top: 20px;">
             <ul>
               <li>
-                <a href="../">Home</a>
+                <a href="#" onclick="miFuncion3(); return false;"">Home</a>
               </li>
               <li>
                 <a href="/work">Products</a>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <a href="#" onclick="miFuncion(); return false;">Services</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="#" onclick="miFuncion2(); return false;">About</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>
@@ -346,7 +392,7 @@
           </div>
         </div>
         <div class="column links">
-          <h3>Contact</h3>
+          <h3 class="alinear">Contact</h3>
           <div style="margin-top: 20px;">
             <ul>
               <li>
@@ -364,7 +410,7 @@
 
         </div>
         <div class="column subscribe">
-          <h3>Ubication</h3>
+          <h3 class="alinear">Ubication</h3>
           <div style="margin-top: 20px;">
             <div style="width: 100%">
               <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="200" frameborder="0"></iframe>
@@ -389,18 +435,71 @@
 
 
 
-
-
-
   <div class="b--nv" id="js-nv">
     <div class="b--nv__win">
       <div class="b--nv__bd">
         <div class="b--nv__mn">
+         <br/>
+           <br/> 
+            <br/>
           <div class="b--nv__hr _l">
-            <div class="b--nv__hr__i js-nv-bd"></div>
+            <div class="b--nv__hr__i js-nv-bd"> 
+                      </div>
           </div>
+                  
           <ul class="b--nv__ul">
+             <li class="b--nv__one">
+              <div class="b--nv__one__i">
+                <div class="b--nv__one__t js-nv-one">
+                  <a class="b--nv__one__a h--tx" href="../" aria-label="Home">
+                    <span class="b--nv__one__lab f--head">
+                      <span class="b--nv__one__lab__f h--tx__i">Home</span>
+                      <span class="b--nv__one__lab__b h--tx__i">Home</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="b--nv__hr">
+                <div class="b--nv__hr__i js-nv-bd"></div>
+              </div>
+            </li>  
+              
+              
+          <li class="b--nv__one">
+              <div class="b--nv__one__i">
+                <div class="b--nv__one__t js-nv-one">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion2(); return false;" aria-label="About">
+                    <span class="b--nv__one__lab f--head">
+                      <span class="b--nv__one__lab__f h--tx__i">About</span>
+                      <span class="b--nv__one__lab__b h--tx__i">About</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="b--nv__hr">
+                <div class="b--nv__hr__i js-nv-bd"></div>
+              </div>
+            </li>
+              
+          
+            
             <li class="b--nv__one">
+              <div class="b--nv__one__i">
+                <div class="b--nv__one__t js-nv-one">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion(); return false;" aria-label="Our crew">
+                    <span class="b--nv__one__lab f--head">
+                      <span class="b--nv__one__lab__f h--tx__i">Services</span>
+                      <span class="b--nv__one__lab__b h--tx__i">Services</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="b--nv__hr">
+                <div class="b--nv__hr__i js-nv-bd"></div>
+              </div>
+            </li>
+           
+              <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
                   <a class="b--nv__one__a h--tx" href="/work" aria-label="Work">
@@ -415,36 +514,7 @@
                 <div class="b--nv__hr__i js-nv-bd"></div>
               </div>
             </li>
-            <li class="b--nv__one">
-              <div class="b--nv__one__i">
-                <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="/services" aria-label="Our crew">
-                    <span class="b--nv__one__lab f--head">
-                      <span class="b--nv__one__lab__f h--tx__i">Services</span>
-                      <span class="b--nv__one__lab__b h--tx__i">Services</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="b--nv__hr">
-                <div class="b--nv__hr__i js-nv-bd"></div>
-              </div>
-            </li>
-            <li class="b--nv__one">
-              <div class="b--nv__one__i">
-                <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="/about" aria-label="About">
-                    <span class="b--nv__one__lab f--head">
-                      <span class="b--nv__one__lab__f h--tx__i">About</span>
-                      <span class="b--nv__one__lab__b h--tx__i">About</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="b--nv__hr">
-                <div class="b--nv__hr__i js-nv-bd"></div>
-              </div>
-            </li>
+            
             <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
@@ -460,18 +530,7 @@
                 <div class="b--nv__hr__i js-nv-bd"></div>
               </div>
             </li>
-            <li class="b--nv__one">
-              <div class="b--nv__one__i">
-                <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="../" aria-label="Home">
-                    <span class="b--nv__one__lab f--head">
-                      <span class="b--nv__one__lab__f h--tx__i">Home</span>
-                      <span class="b--nv__one__lab__b h--tx__i">Home</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </li>
+           
           </ul>
           <div class="b--nv__hr _r">
             <div class="b--nv__hr__i js-nv-bd"></div>
@@ -517,6 +576,7 @@
 	<div class="b--aw">
 	  <canvas class="b--awc" id="-aw"></canvas>
 	</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script><script  src="./script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
@@ -524,7 +584,51 @@
   <script src="/assets/js/lib.js" defer></script>
   <script src="/assets/js/vndr.js" defer></script>
   <script src="/assets/js/app.js" defer></script>
+     <script >
+
+let ejecutado = false; // indicador booleano
+
+
+
+
+function miFuncion(link) {
+
   
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/services", "self");
+    newTab.location.reload();
+  
+}
+
+function miFuncion2(link) {
+  
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/about/index.html", "self");
+    newTab.location.reload();
+  
+}
+
+
+function miFuncion3(link) {
+
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/", "self");
+    newTab.location.reload();
+  
+}
+$(document).ready(function() {
+  if ($("#js-nv").css("opacity") == "1") {
+    $(".hamburguer").css("opacity", "1");
+  } else {
+    $(".hamburguer").css("opacity", "0");
+  }
+});
+  </script>
 
 </body>
 </html>

@@ -16,7 +16,7 @@
   :where(.wp-block-columns.is-layout-flex){gap: 2em;}
   .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
   </style>
-
+<link rel="canonical" href="http://127.0.0.1/" />
   <meta name="description" content="">
 
   <meta property="og:url" content="">
@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'><link rel="stylesheet" href="./style.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css'>
 
   <style>
     html{background-color:#000;}
@@ -127,20 +127,69 @@
         }
           }
 
+.main-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+ } 
 
 
-iframe::-webkit-scrollbar {
-    display: none !important;
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  max-width: 520px;
+  width:100%;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.picture {
+  width: 100%;
+  max-height: 420px;
+  height:auto;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+    max-width:100% !important;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.detail {
+  padding: 25px 20px;
+  
+  text-align: center;
+ 
+} 
+
+
+.swiper-container span {
+	color: gray;
+  }
+
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Noto+Sans+JP:wght@500&amp;family=Noto+Serif+JP:wght@500&amp;family=Poppins:wght@500&amp;display=swap" rel="stylesheet">
-  <link href="/assets/css/style.css" rel="stylesheet">
+  
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
 <link href="/assets/css/footer.css" rel="stylesheet">
 <link href="/assets/css/all.css" rel="stylesheet">
 <link href="/assets/css/style.css" rel="stylesheet">
-<link href="/assets/css/style2.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -204,12 +253,15 @@ iframe::-webkit-scrollbar {
     </a>
   </div>
 
-  <button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="js-hm">
+  <button class="b--hm " type="button" aria-label="Navigation Controlr" id="js-hm2">
     <span class="b--hm__in">
       <!--span class="b--hm__ico js-hm-i"></span-->
       <img src="../assets/config/logo.png" style="width: 200%;">
     </span>
   </button>
+  
+  
+  
 
   <div class="b--wrap -loadhidden" id="js-wrap" data-pj="w">  
     <div class="b--ct" id="js-ct" data-pj="c" data-pj-dir="home">
@@ -225,13 +277,13 @@ iframe::-webkit-scrollbar {
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Home</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="/services" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">Services</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">Services</span>
                 </span>
               </a>
-              <a class="b--gn__btn js-hv" href="#About" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
+              <a class="b--gn__btn js-hv" href="#" onclick="miFuncion2(); return false;" aria-label="Work" data-hv="text" style="border: 0px; width: 6.5rem;">
                 <span class="b--gn__btn__lab">
                   <span class="b--gn__btn__lab__f f--en -tl js-tex" data-class="-t">About</span>
                   <span class="b--gn__btn__lab__b f--en -tl js-tex" data-class="-t">About</span>
@@ -261,9 +313,9 @@ iframe::-webkit-scrollbar {
             <div class="tp--hd__mn js-pos">
 
 
-              <div class="tp--hd__lg a--op">
+              <div class="tp--hd__lg a--op ">
                 <div class="tp--hd__lg__i c--fic">
-                  <img src="assets/config/logo.png" style="width: 200%;">
+                  <img src="assets/config/logo.png" class="logo-t">
                 </div>
               </div>
 
@@ -323,7 +375,7 @@ iframe::-webkit-scrollbar {
 
 
 
-         <div class="tp--ob__bd" id="About">
+         <div class="tp--ob__bd" id="about">
     <div class="ab--kv" >
 
         <header class="m--phd" style="padding: 10.875rem 4.16667% 0;">
@@ -408,19 +460,87 @@ iframe::-webkit-scrollbar {
 
       </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-
-
         <section class="tp--ob ">
           <div class="tp--ob__bd">
-            <header class="tp--ob__hd js-pos js-tdr" data-de=".03">
-              <h3 class="tp--ob__ttl f--head js-tex" data-class="a--op js-tdi">Our Services</h3>
+            <header class="tp--ow__hd js-pos js-tdr" data-de=".03">
+              <h3 class="tp--ow__ttl f--head titulo-p js-tex" data-class="a--op js-tdi">Our <br>Services</h3>
             </header>
-            <div class="tp--ob__rd js-pos js-tdg myswap" data-de=".08" data-de-offset=".08">
-             <iframe src="slider_section/" style="width: 100%; height: 990px;" style="position:relative;"></iframe> 
+            <div class="main-slide" >
+            <div class="swiper-container" id="myswap">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_1.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Surveillance cameras</h3>
+        <span>Ofek systems offers world-class security camera systems installed by professional security camera system installers. We have years of experience in planning, customizing and installing comprehensive CCTV systems. We offer video surveillance systems, indoor and outdoor camera systems and cutting-edge video analytics. We specialize in the design and installation of security camera systems for homes, businesses, companies and institutions.
+		</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_2.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Alarm systems</h3>
+        <span>Your home / business contains people and assets that you want to protect. Installing an alarm system helps you keep out burglars, reduce employee theft, stop unauthorized access, cut insurance costs and prevent theft. Our professional alarm system installers have years of experience in designing, customizing and installing burglar alarms. As a leading commercial alarm company, Safe and Sound Security designs and installs alarm systems for homes, stores, cannabis businesses, industrial facilities, warehouses, apartment complexes, general contractors, commercial buildings, retail establishments and technology companies.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_3.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Network installation</h3>
+        <span>ofek systems provides speedy and reliable connection for maximum business security. We ensure your commercial security system is strong, connected, and communicative with top-notch cabling services. Whether your property is an office building, industrial facility, apartment complex, or any other commercial area, we have the tools to handle your project.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_4.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Access control installers</h3>
+        <span>Ofek Systems provides effective and simple-to-use door access control systems. We offer over a decade of experience in the design, customization and installation of wired and wireless key card access systems. As access control installers, we understand the importance of controlling who enters and exits your building. We specialize in designing door access control systems for cannabis operations, offices, stores, homes, industrial facilities, warehouses, apartment complexes, general contractors, commercial buildings, retail establishments and technology companies.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_5.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Audio / Video installations</h3>
+        <span>We are industry-leading specialists in the design, supply, and installation of professional audio and video systems for commercial premises, restaurants, bars, places of worship, schools, and home use. We have a large range of pre-configured off-the-shelf installation packages to suit most requirements, along with our ever-expanding catalog, which covers everything from modern 'smart home' equipment to high-powered PA systems for events and large venues. Our team is always on hand to guide you in creating an audio system to suit your specific needs, whether you require a discreet home system or a large multi-zone commercial system, we will work with you to create a bespoke package.
+											</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="picture">
+        <img src="services/img/image_6.jpg" alt="">
+      </div>
+      <div class="detail">
+        <h3 style="color:black;text-align:center">Finance And Legal <br> Working Streams Occur Throughout</h3>
+        <span>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+											</span>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+   <div class="swiper-pagination"></div> 
+
+  <!-- If we need navigation buttons -->
+  <!--     <div class="swiper-button-prev"></div> -->
+  <!--     <div class="swiper-button-next"></div> -->
+
+  <!-- If we need scrollbar -->
+  <!-- <div class="swiper-scrollbar"></div> -->
+</div>
               
               
             </div>
@@ -436,7 +556,8 @@ iframe::-webkit-scrollbar {
       <section class="tp--ow">
         <div class="tp--ow__bd js-pos">
           <header class="tp--ow__hd js-tdr" data-de=".03">
-            <h2 class="tp--ow__ttl f--head js-tex" data-class="a--op js-tdi">Our <br>Products</h2>
+          
+            <h2 class="tp--ow__ttl f--head js-tex titulo-p" data-class="a--op js-tdi">Our <br>Products</h2>
           </header>
           <div class="tp--ow__rd js-tdg" data-de=".08" data-de-offset=".08">
             <p class="tp--ow__rd__p a--op js-tdi"></p>
@@ -500,10 +621,10 @@ iframe::-webkit-scrollbar {
                 <a href="/work">Products</a>
               </li>
               <li>
-                <a href="/services">Services</a>
+                <a href="#" onclick="miFuncion(); return false;">Services</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="#" onclick="miFuncion2(); return false;">About</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>
@@ -639,7 +760,7 @@ iframe::-webkit-scrollbar {
               <p class="tp--wm__ttl f--srf -item">「るろうに剣心　最終章　The Final」</p>
             <p class="tp--wm__de -item">2021年4月23日（金） 公開<br/>ⓒ和月伸宏 / 集英社<br />
 ⓒ2020映画「るろうに剣心 最終章 The Final」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://wwws.warnerbros.co.jp/rurouni-kenshin2020/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -656,7 +777,7 @@ iframe::-webkit-scrollbar {
             <p class="tp--wm__ttl f--srf -item">「映画 賭ケグルイ　絶体絶命ロシアンルーレット」</p>
             <p class="tp--wm__de -item">2021年6月1日（金） 公開<br/>ⓒ河本ほむら・尚村透 / SQUARE ENIX<br />
 ⓒ「映画 賭ケグルイ2」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://kakegurui.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -673,7 +794,7 @@ iframe::-webkit-scrollbar {
             <p class="tp--wm__ttl f--srf -item">「るろうに剣心　最終章　The Beginning」</p>
             <p class="tp--wm__de -item">2021年6月4日（金） 公開<br/>ⓒ和月伸宏 / 集英社<br />
 ⓒ2020映画「るろうに剣心 最終章 The Beginning」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://wwws.warnerbros.co.jp/rurouni-kenshin2020/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -696,7 +817,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「ザ・ファブル」</p>
             <p class="tp--wm__de -item">2019年6月21日（金） 公開<br/>ⓒ2019 映画「ザ・ファブル」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://the-fable-movie.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -713,7 +834,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「全裸監督　シーズン２」</p>
             <p class="tp--wm__de -item">2021年6月24日（木） 公開<br/>©2021 C&I entertainment</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://www.netflix.com/title/80239462" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -738,7 +859,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「狐狼の血　LEVEL2」</p>
             <p class="tp--wm__de -item">2021年8月20日（金） 公開<br/>ⓒ2021「狐狼の血　LEVEL2」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://www.korou.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -755,7 +876,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「ドライブ・マイ・カー」</p>
             <p class="tp--wm__de -item">2021年8月20日（金） 公開<br/>ⓒ2021「ドライブ・マイ・カー」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://dmc.bitters.co.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -771,7 +892,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「マスカレード・ナイト」</p>
             <p class="tp--wm__de -item">2021年9月17日（金） 公開<br/>ⓒ2021東野圭吾 / 集英社・映画「マスカレード・ナイト」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://masquerade-night.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -788,7 +909,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「空白」</p>
             <p class="tp--wm__de -item">2021年9月23日（木） 公開<br/>ⓒ2021「空白」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://kuhaku-movie.com/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -805,7 +926,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「ボクたちはみんな大人になれなかった」</p>
             <p class="tp--wm__de -item">2021年11月5日（金） 公開<br/>©2021 C&I entertainment</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://bokutachiha.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -821,7 +942,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「あなたの番です　劇場版」</p>
             <p class="tp--wm__de -item">2021年12月10日（金） 公開<br/>ⓒ2021「あなたの番です　劇場版」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://anaban-nana-shouta.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -838,7 +959,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「私はいったい、何と闘っているのか」</p>
             <p class="tp--wm__de -item">2021年12月17日（金） 公開<br/>ⓒ2021つぶやきシロー・ホリプロ・小学館 / 闘う製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://nanitata-movie.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -856,7 +977,7 @@ iframe::-webkit-scrollbar {
             <p class="tp--wm__ttl f--srf -item">「KAPPEI」</p>
             <p class="tp--wm__de -item">2022年3月18日（金） 公開<br/>ⓒ2022 映画『KAPPEI』製作委員会　<br />
 ©若杉公徳／白泉社（ヤングアニマルコミックス）</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://kappei-movie.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -873,7 +994,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「女子高生に殺されたい」</p>
             <p class="tp--wm__de -item">2022年4月1日（金） 公開<br/>ⓒ2022日活</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://joshikoro.com/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -890,7 +1011,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「劇場版ラジエーションハウス」</p>
             <p class="tp--wm__de -item">2022年4月29日（金） 公開<br/>ⓒ2022横幕智裕・モリタイシ / 集英社・映画「劇場版ラジエーションハウス」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://radiationhouse-movie.jp/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -907,7 +1028,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「流浪の月」</p>
             <p class="tp--wm__de -item">2022年5月13日（金） 公開<br/>ⓒ2022「流浪の月」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://gaga.ne.jp/rurounotsuki/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -924,7 +1045,7 @@ iframe::-webkit-scrollbar {
                   <div class="tp--wm__one -one">
             <p class="tp--wm__ttl f--srf -item">「神は見返りを求める」</p>
             <p class="tp--wm__de -item">2022年6月24日（金） 公開<br/>ⓒ2022「神は見返りを求める」製作委員会</p>
-                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="https://kami-mikaeri.com/" target="_blank" data-hv="btn">
+                        <div class="tp--wm__btn -item"><a class="tp--wm__btn__tgt js-hv" href="#" target="_blank" data-hv="btn">
               <p class="tp--wm__btn__lab f--en">Official</p>
               <div class="tp--wm__btn__ico c--fic"><span class="tp--wm__btn__b c--fic">
                   <svg class="c--sg" viewBox="0 0 18 18">
@@ -1028,19 +1149,82 @@ iframe::-webkit-scrollbar {
     </div>
   </div>
   </div>
+  
+<div class="hamburger">  
+<button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="js-hm">
 
+	<div class="_layer -top"></div>
+	<div class="_layer -mid"></div>
+	<div class="_layer -bottom"></div>
 
-
+</button>
+</div>
 
   <div class="b--nv" id="js-nv">
     <div class="b--nv__win">
       <div class="b--nv__bd">
         <div class="b--nv__mn">
-          <div class="b--nv__hr _l">
-            <div class="b--nv__hr__i js-nv-bd"></div>
+          <br/>
+           <br/> 
+            <br/> 
+         <div class="b--nv__hr _l">
+            <div class="b--nv__hr__i js-nv-bd"> 
+                      </div>
           </div>
+                 
           <ul class="b--nv__ul">
+             <li class="b--nv__one">
+              <div class="b--nv__one__i">
+                <div class="b--nv__one__t js-nv-one">
+                  <a class="b--nv__one__a h--tx" href="../" aria-label="Home">
+                    <span class="b--nv__one__lab f--head">
+                      <span class="b--nv__one__lab__f h--tx__i">Home</span>
+                      <span class="b--nv__one__lab__b h--tx__i">Home</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="b--nv__hr">
+                <div class="b--nv__hr__i js-nv-bd"></div>
+              </div>
+            </li>  
+              
+              
+          <li class="b--nv__one">
+              <div class="b--nv__one__i">
+                <div class="b--nv__one__t js-nv-one">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion2(); return false;" aria-label="About">
+                    <span class="b--nv__one__lab f--head">
+                      <span class="b--nv__one__lab__f h--tx__i">About</span>
+                      <span class="b--nv__one__lab__b h--tx__i">About</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="b--nv__hr">
+                <div class="b--nv__hr__i js-nv-bd"></div>
+              </div>
+            </li>
+              
+          
+            
             <li class="b--nv__one">
+              <div class="b--nv__one__i">
+                <div class="b--nv__one__t js-nv-one">
+                  <a class="b--nv__one__a h--tx" href="#" onclick="miFuncion(); return false;" aria-label="Our crew">
+                    <span class="b--nv__one__lab f--head">
+                      <span class="b--nv__one__lab__f h--tx__i">Services</span>
+                      <span class="b--nv__one__lab__b h--tx__i">Services</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="b--nv__hr">
+                <div class="b--nv__hr__i js-nv-bd"></div>
+              </div>
+            </li>
+           
+              <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
                   <a class="b--nv__one__a h--tx" href="/work" aria-label="Work">
@@ -1055,36 +1239,7 @@ iframe::-webkit-scrollbar {
                 <div class="b--nv__hr__i js-nv-bd"></div>
               </div>
             </li>
-            <li class="b--nv__one">
-              <div class="b--nv__one__i">
-                <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="/services" aria-label="Our crew">
-                    <span class="b--nv__one__lab f--head">
-                      <span class="b--nv__one__lab__f h--tx__i">Services</span>
-                      <span class="b--nv__one__lab__b h--tx__i">Services</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="b--nv__hr">
-                <div class="b--nv__hr__i js-nv-bd"></div>
-              </div>
-            </li>
-            <li class="b--nv__one">
-              <div class="b--nv__one__i">
-                <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="/about" aria-label="About">
-                    <span class="b--nv__one__lab f--head">
-                      <span class="b--nv__one__lab__f h--tx__i">About</span>
-                      <span class="b--nv__one__lab__b h--tx__i">About</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="b--nv__hr">
-                <div class="b--nv__hr__i js-nv-bd"></div>
-              </div>
-            </li>
+            
             <li class="b--nv__one">
               <div class="b--nv__one__i">
                 <div class="b--nv__one__t js-nv-one">
@@ -1100,18 +1255,7 @@ iframe::-webkit-scrollbar {
                 <div class="b--nv__hr__i js-nv-bd"></div>
               </div>
             </li>
-            <li class="b--nv__one">
-              <div class="b--nv__one__i">
-                <div class="b--nv__one__t js-nv-one">
-                  <a class="b--nv__one__a h--tx" href="../" aria-label="Home">
-                    <span class="b--nv__one__lab f--head">
-                      <span class="b--nv__one__lab__f h--tx__i">Home</span>
-                      <span class="b--nv__one__lab__b h--tx__i">Home</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </li>
+           
           </ul>
           <div class="b--nv__hr _r">
             <div class="b--nv__hr__i js-nv-bd"></div>
@@ -1158,6 +1302,7 @@ iframe::-webkit-scrollbar {
   <div class="b--aw">
     <canvas class="b--awc" id="-aw"></canvas>
   </div>
+   <script src="/assets/js/jquery-3.5.1.min.js" defer></script>
 <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
@@ -1166,10 +1311,75 @@ iframe::-webkit-scrollbar {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js'></script><script src="/assets/js/script.js" defer></script>
   <script src="/assets/js/lib.js" defer></script>
   <script src="/assets/js/vndr.js" defer></script>
-  <script src="/assets/js/app.js" defer></script>
-  <!--script src="/assets/js/jquery-3.5.1.min.js" defer></script>
-  <script src="/assets/js/footer.js" defer></script>
-  <script src="/assets/js/underscore.js" defer></script-->
+  <script src="/assets/js/app.js" defer></script> 
+  <script >
+
+let ejecutado = false; // indicador booleano
+
+
+
+
+function miFuncion(link) {
+
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/services/index.html", "self");
+    newTab.location.reload();
+  
+}
+
+function miFuncion2(link) {
+  
+  
+  
+    ejecutado = true; // cambiar el indicador a verdadero
+    var newTab=  window.location.replace("/about/index.html", "self");
+    newTab.location.reload();
+  
+}
+
+
+
+var swiper = new Swiper(".swiper-container", {
+  effect: "coverflow",
+  loop:true,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 350,
+    modifier: 1,
+    slideShadows: true
+  },
+  autoplay: {
+	  delay: 3000,
+	  disableOnInteraction: false,
+	},
+  pagination: {
+    el: ".swiper-pagination"
+  }
+});
+
+document.querySelector(".hamburguer").addEventListener("click", function(){
+	document.querySelector("#b--nv").classList.toggle("active");
+	document.querySelector(".hamburguer").classList.toggle("close-hamburguer");
+});
+
+
+$(document).ready(function() {
+  if ($("#js-nv").css("opacity") == "1") {
+    $(".hamburguer").css("opacity", "1");
+  } else {
+    $(".hamburguer").css("opacity", "0");
+  }
+});
+  </script>
+ 
+  
+ 
 
 
 </body>
