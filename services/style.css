@@ -5,9 +5,9 @@ main {
   position: relative;
   width: calc(min(90rem, 90%));
   margin: 0 auto;
-  min-height: 60vh;
+  min-height: 32vh;
   column-gap: 3rem;
-  padding-block: min(20vh, 3rem);
+  padding-block: min(20vh, 1rem);
 }
 
 .bg {
