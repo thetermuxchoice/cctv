@@ -202,7 +202,7 @@ main > div > a:hover {
 }
 @media screen and (min-width: 93.75rem) {
   .swiper {
-    width: 150%;
+    width: 100%;
   }
 }
 
