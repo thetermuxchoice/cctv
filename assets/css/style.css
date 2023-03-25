@@ -6613,7 +6613,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 	transform:translate3d(0, 0, 0);
 	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-	z-index:1002;
+	/* z-index:1002; */
 	cursor:pointer;
 	-webkit-user-select:none;
 	-moz-user-select:none;
@@ -6727,13 +6727,13 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 }
 @media only screen and (min-width:1024px){
 .hamburger{
-    opacity:0;
+    /* opacity:0; */
 }
 }
 
 @media only screen and (max-width:1023px){
 .hamburger{
-    opacity:1;
+    /* opacity:1; */
 }
 
 .tp--ow__ttl {
