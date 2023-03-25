@@ -23,7 +23,7 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 520px;
+  max-width: 520px;
   background-color: #fff;
   overflow: hidden;
   border-radius: 8px;
