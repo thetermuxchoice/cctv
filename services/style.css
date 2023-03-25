@@ -322,6 +322,14 @@ main > div > a:hover {
     /* font-size:19px; */
 /* } */
 /* } */
+@media only screen and(max-width:479px){
+   .single-view-content {
+      height:800px !important;
+     
+
+    }
+}
+
 
 @media only screen and(max-width:849px){
    .alinear{
@@ -332,7 +340,7 @@ main > div > a:hover {
 
 @media only screen and(max-width:479px){
    .single-view-content {
-      height:500px !important;
+      height:700px !important;
      
 
     }
