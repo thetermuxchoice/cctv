@@ -1365,18 +1365,19 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 document.querySelector(".hamburguer").addEventListener("click", function(){
-	document.querySelector("#b--nv").classList.toggle("active");
+	document.querySelector(".b--nv").classList.toggle("active");
 	document.querySelector(".hamburguer").classList.toggle("close-hamburguer");
 });
 
 
 $(document).ready(function() {
-  if ($("#js-nv").css("opacity") == "1") {
+  if ($(".b--nv").css("visibility") == "1") {
     $(".hamburguer").css("opacity", "1");
   } else {
     $(".hamburguer").css("opacity", "0");
   }
-});
+}
+);
   </script>
  
   
