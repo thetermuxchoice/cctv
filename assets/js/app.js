@@ -1791,7 +1791,7 @@
                         }
                         init() {
                             this.item = {
-                                hit: [h.getElementById("js-hm"),h.getElementById("js-hm3")],
+                                hit: h.getElementById("js-hm"),
                                 hiticon: h.getElementById("js-hm").querySelectorAll(".js-hm-i"),
                                 wp: h.getElementById("js-nv"),
                                 border: h.getElementById("js-nv").querySelectorAll(".js-nv-bd"),
