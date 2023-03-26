@@ -1214,7 +1214,16 @@
     <div class="b--nv__win">
       <div class="b--nv__bd">
         <div class="b--nv__mn">
-        <br/>
+        <div class="hamburger">  
+<button class="b--hm -loadhidden -siteparts"  type="button" aria-label="Navigation Controlr" id="ocultar-menu" onclick="mimenu(); return false;">
+
+	<div class="_layer -top"></div>
+	<div class="_layer -mid"></div>
+	<div class="_layer -bottom"></div>
+
+</button>
+</div>
+       <br/>
            <br/> 
             <br/> 
           <div class="b--nv__hr _l">
@@ -1394,6 +1403,13 @@ function miFuncion3(link) {
     newTab.location.reload();
   
 }
+
+function mimenu() {
+  $("#js-nv").css("opacity", "0");
+  $("#js-nv").css("visibility", "hidden");
+  //document.getElementById("miElemento").style.display = "block";
+}
+
 
 $(document).ready(function() {
   if ($("#js-nv").css("opacity") == "1") {

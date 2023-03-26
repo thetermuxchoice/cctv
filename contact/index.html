@@ -374,6 +374,16 @@
     <div class="b--nv__win">
       <div class="b--nv__bd">
         <div class="b--nv__mn">
+ <div class="hamburger">  
+<button class="b--hm -loadhidden -siteparts"  type="button" aria-label="Navigation Controlr" id="ocultar-menu" onclick="mimenu(); return false;">
+
+	<div class="_layer -top"></div>
+	<div class="_layer -mid"></div>
+	<div class="_layer -bottom"></div>
+
+</button>
+</div>
+        
         <br/>
            <br/> 
             <br/> 
@@ -553,8 +563,15 @@ function miFuncion3(link) {
   
 }
 
+function mimenu() {
+  $("#js-nv").css("opacity", "0");
+  $("#js-nv").css("visibility", "hidden");
+  //document.getElementById("miElemento").style.display = "block";
+}
+
+
 $(document).ready(function() {
-  if ($("#js-nv").css("opacity") == "1") {
+  if ($(".b--nv").css("opacity") == "1") {
     $(".hamburguer").css("opacity", "1");
   } else {
     $(".hamburguer").css("opacity", "0");
