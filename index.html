@@ -1166,7 +1166,7 @@
       <div class="b--nv__bd">
         <div class="b--nv__mn">
         <div class="hamburger">  
-<button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="js-hm3">
+<button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="ocultar-menu">
 
 	<div class="_layer -top"></div>
 	<div class="_layer -mid"></div>
@@ -1389,10 +1389,10 @@ $(document).ready(function() {
 );
 
 var boton1 = document.getElementById("js-hm");
-var boton2 = document.getElementById("js-hm3");
+var boton2 = document.getElementById("ocultar-menu");
 
-		boton2.addEventListener("click", function() {
-			boton1.click();
+  boton2.addEventListener("click", function() {
+			 $(".b--nv").css("opacity", "0"); $(".b--nv").css("visibility", "hidden");
 		});
 
   </script>
