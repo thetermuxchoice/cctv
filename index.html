@@ -1377,6 +1377,13 @@ $(document).ready(function() {
     $(".hamburguer").css("opacity", "0");
   }
 });
+
+
+if (document.documentElement.classList.contains('is-navopen') && document.documentElement.classList.contains('is-navopened')) {
+  document.querySelector('.hamburger').style.cssText = 'visibility: inherit !important;'; document.querySelector('.hamburger').style.cssText = 'opacity: 1 !important;';
+} else {
+   document.querySelector('.hamburger').style.cssText = 'visibility: hidden !important;'; document.querySelector('.hamburger').style.cssText = 'opacity: 0 !important;';
+}
   </script>
  
   
