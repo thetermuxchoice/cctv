@@ -6725,7 +6725,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 }
 @media only screen and (min-width:1024px){
 .hamburger{
-    opacity:0;
+    opacity:0;display:none;
 }
 }
 
