@@ -1166,7 +1166,7 @@
       <div class="b--nv__bd">
         <div class="b--nv__mn">
         <div class="hamburger">  
-<button class="b--hm -loadhidden -siteparts" type="button" aria-label="Navigation Controlr" id="ocultar-menu">
+<button class="b--hm -loadhidden -siteparts"  type="button" aria-label="Navigation Controlr" id="ocultar-menu" onclick="mimenu(); return false;">
 
 	<div class="_layer -top"></div>
 	<div class="_layer -mid"></div>
@@ -1349,7 +1349,11 @@ function miFuncion2(link) {
   
 }
 
-
+function mimenu() {
+  $("#js--nv").css("opacity", "0");
+  $("#js--nv").css("visibility", "hidden");
+  //document.getElementById("miElemento").style.display = "block";
+}
 
 var swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
@@ -1388,12 +1392,6 @@ $(document).ready(function() {
 }
 );
 
-var boton1 = document.getElementById("js-hm");
-var boton2 = document.getElementById("ocultar-menu");
-
-  boton2.addEventListener("click", function() {
-			 $(".b--nv").css("opacity", "0"); $(".b--nv").css("visibility", "hidden");
-		});
 
   </script>
  
