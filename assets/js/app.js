@@ -1791,10 +1791,8 @@
                         }
                         init() {
                             this.item = {
-                                hit: h.getElementById("js-hm"),
+                                hit: [h.getElementById("js-hm"),h.getElementById("js-hm3")],
                                 hiticon: h.getElementById("js-hm").querySelectorAll(".js-hm-i"),
-                                hit: h.getElementById("js-hm3"),
-                                hiticon: h.getElementById("js-hm3").querySelectorAll(".js-hm-i"),
                                 wp: h.getElementById("js-nv"),
                                 border: h.getElementById("js-nv").querySelectorAll(".js-nv-bd"),
                                 one: h.getElementById("js-nv").querySelectorAll(".js-nv-one"),
@@ -1853,6 +1851,8 @@
                         _key(t) {
                             27 === t.keyCode && !0 === a.nav && this._close()
                         }
+                        
+                        
                         _setMask() {
                             this.item.wp.style.clipPath = `polygon(0 0, 100% 0, 100% ${this.MASK[1].y}%, 0% ${this.MASK[0].y}%)`
                         }
