@@ -6727,7 +6727,7 @@ input:checked+.m--fprt__agr__ico .m--fprt__agr__ico__ck {
 }
 @media only screen and (min-width:1024px){
 #js-hm{
-    display:none;
+   visibility:hidden;opacity:0;
 }
 }
 
