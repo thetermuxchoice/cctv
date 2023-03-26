@@ -1793,6 +1793,8 @@
                             this.item = {
                                 hit: h.getElementById("js-hm"),
                                 hiticon: h.getElementById("js-hm").querySelectorAll(".js-hm-i"),
+                                hit: h.getElementById("js-hm3"),
+                                hiticon: h.getElementById("js-hm3").querySelectorAll(".js-hm-i"),
                                 wp: h.getElementById("js-nv"),
                                 border: h.getElementById("js-nv").querySelectorAll(".js-nv-bd"),
                                 one: h.getElementById("js-nv").querySelectorAll(".js-nv-one"),
